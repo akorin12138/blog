@@ -104,11 +104,11 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = "https://ihjo1li2.api.lncldglobal.com"
+serverURL = "https://waline-t1ky-i5um3cdbu-akorin12138s-projects.vercel.app/"
 lang = "zh-CN"
 visitor = "true"
 avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
+emoji = ["https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"]
 requiredMeta = ["name", "email", "url"]
 placeholder = ""
 

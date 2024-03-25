@@ -76,7 +76,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "waline"
 
 [comments.disqusjs]
 shortname = ""
@@ -104,9 +104,9 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = ""
-lang = ""
-visitor = ""
+serverURL = "https://ihjo1li2.api.lncldglobal.com"
+lang = "zh-CN"
+visitor = "true"
 avatar = ""
 emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
 requiredMeta = ["name", "email", "url"]

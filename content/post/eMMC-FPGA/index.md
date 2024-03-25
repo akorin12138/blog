@@ -17,13 +17,13 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 
 ## eMMC响应格式
-![eMMC响应格式0](response0.png)
+![ ](response0.png)
 
-![eMMC响应格式1](response1.png)
+![ ](response1.png)
 
-![eMMC响应格式2](response2.png)
+![ ](response2.png)
 
-![eMMC响应格式3](response3.png)
+![ ](response3.png)
 
 
 ## eMMC时序参数

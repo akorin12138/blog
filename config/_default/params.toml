@@ -132,8 +132,8 @@ repoID = "R_kgDOLlDnbQ"
 category = "Announcements"
 categoryID = "DIC_kwDOLlDnbc4CeNbK"
 mapping = "pathname"
-lightTheme = "noborder_dark"
-darkTheme = "noborder_light"
+lightTheme = "noborder_light"
+darkTheme = "noborder_dark"
 reactionsEnabled = 1
 emitMetadata = 0
 

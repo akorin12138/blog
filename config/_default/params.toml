@@ -76,7 +76,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "waline"
+provider = "giscus"
 
 [comments.disqusjs]
 shortname = ""
@@ -127,13 +127,13 @@ serverName = "cactus.chat"
 siteName = ""
 
 [comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
+repo = "akorin12138/blog"
+repoID = "R_kgDOLlDnbQ"
+category = "Announcements"
+categoryID = "DIC_kwDOLlDnbc4CeNbK"
+mapping = "pathname"
+lightTheme = "transparent_dark"
+darkTheme = "noborder_light"
 reactionsEnabled = 1
 emitMetadata = 0
 

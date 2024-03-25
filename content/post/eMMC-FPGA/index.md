@@ -13,14 +13,14 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ---
 
 ## eMMC命令格式
-![eMMC命令格式](commandtype.png){: width="972" height="589" }
+![eMMC命令格式](commandtype.png)
 
 
 ## eMMC响应格式
-![eMMC响应格式0](response0.png){: .normal }
-![eMMC响应格式1](response1.png){: .normal }
-![eMMC响应格式2](response2.png){: .normal }
-![eMMC响应格式3](response3.png){: .normal }
+![eMMC响应格式0](response0.png)
+![eMMC响应格式1](response1.png)
+![eMMC响应格式2](response2.png)
+![eMMC响应格式3](response3.png)
 
 
 ## eMMC时序参数

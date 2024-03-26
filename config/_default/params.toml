@@ -112,7 +112,7 @@ emoji = ["https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"]
 requiredMeta = ["name", "email", "url"]
 placeholder = "说点什么吧..."
 appId = 'Ihjo1lI2caxFp0hp2tWdY4DR-MdYXbMMI'
-appKey = 'RAJh72egXHiiASaIa0RVMdL3'
+appKey = 'Hr3koDHnKG4eG8FMUQ83NAQU'
 
 [comments.waline.locale]
 admin = "Admin"

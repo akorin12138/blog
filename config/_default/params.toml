@@ -76,7 +76,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqusjs"
+provider = "waline"
 
 [comments.disqusjs]
 shortname = ""
@@ -104,7 +104,7 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = "https://blogwaline.gking.icu/"
+serverURL = "https://waline.rinko1017.life/"
 lang = "zh-CN"
 visitor = "true"
 avatar = ""

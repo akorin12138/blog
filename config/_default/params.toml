@@ -76,12 +76,12 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "giscus"
+provider = "disqusjs"
 
 [comments.disqusjs]
 shortname = ""
-apiUrl = ""
-apiKey = ""
+apiUrl = "https://disqus.com/api/oauth/2.0/authorize/"
+apiKey = "3v7kQNQ9fWMsYy7tQ0AHkOMxedjc9WTEd0LmRYW2UdlyT81ovtpkfHH7WnKbuFhs"
 admin = ""
 adminLabel = ""
 

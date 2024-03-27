@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lFod</title><link>https://rinko1017.life/</link><description>Recent content on lFod</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://rinko1017.life/index.xml" rel="self" type="application/rss+xml"/><item><title>基于FPGA的eMMC控制器</title><link>https://rinko1017.life/p/emmc-fpga/</link><pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate><guid>https://rinko1017.life/p/emmc-fpga/</guid><description>&lt;img src="https://rinko1017.life/p/emmc-fpga/cover2.jpg" alt="Featured image of post 基于FPGA的eMMC控制器" />&lt;h2 id="emmc初始化">eMMC初始化&lt;/h2>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/busytoready.png"
+width="683"
+height="378"
+srcset="https://rinko1017.life/p/emmc-fpga/busytoready_hu5c24931cca424d381b050dec1246e110_113339_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/busytoready_hu5c24931cca424d381b050dec1246e110_113339_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="eMMC从忙到准备好"
+class="gallery-image"
+data-flex-grow="180"
+data-flex-basis="433px"
+>&lt;/p>
+&lt;h2 id="emmc命令格式">eMMC命令格式&lt;/h2>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/commandtype.png"
+width="751"
+height="287"
+srcset="https://rinko1017.life/p/emmc-fpga/commandtype_huee6bcf9e4bb734c691cab13f65c50475_32683_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/commandtype_huee6bcf9e4bb734c691cab13f65c50475_32683_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="eMMC命令格式"
+class="gallery-image"
+data-flex-grow="261"
+data-flex-basis="628px"
+>&lt;/p>
+&lt;h2 id="emmc响应格式">eMMC响应格式&lt;/h2>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/response0.png"
+width="702"
+height="332"
+srcset="https://rinko1017.life/p/emmc-fpga/response0_hu2e18623f1bc0f10eb06c0c380e7c7993_58194_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/response0_hu2e18623f1bc0f10eb06c0c380e7c7993_58194_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" "
+class="gallery-image"
+data-flex-grow="211"
+data-flex-basis="507px"
+>&lt;/p>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/response1.png"
+width="761"
+height="669"
+srcset="https://rinko1017.life/p/emmc-fpga/response1_hucf70bd7d5bd8506feb1c81a50da691a8_100721_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/response1_hucf70bd7d5bd8506feb1c81a50da691a8_100721_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" "
+class="gallery-image"
+data-flex-grow="113"
+data-flex-basis="273px"
+>&lt;/p>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/response2.png"
+width="795"
+height="356"
+srcset="https://rinko1017.life/p/emmc-fpga/response2_hu9346f99a78acfed5d39b478bd950d733_41065_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/response2_hu9346f99a78acfed5d39b478bd950d733_41065_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" "
+class="gallery-image"
+data-flex-grow="223"
+data-flex-basis="535px"
+>&lt;/p>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/response3.png"
+width="722"
+height="624"
+srcset="https://rinko1017.life/p/emmc-fpga/response3_hu77aca344ff6ea42f37475319b3480a62_72958_480x0_resize_box_3.png 480w, https://rinko1017.life/p/emmc-fpga/response3_hu77aca344ff6ea42f37475319b3480a62_72958_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt=" "
+class="gallery-image"
+data-flex-grow="115"
+data-flex-basis="277px"
+>&lt;/p>
+&lt;h2 id="emmc时序参数">eMMC时序参数&lt;/h2>
+&lt;p>&lt;img src="https://rinko1017.life/p/emmc-fpga/time.jpg"
+width="530"
+height="691"
+srcset="https://rinko1017.life/p/emmc-fpga/time_hubec4292f4e93f68f54e7426eb8963a1b_62872_480x0_resize_q75_box.jpg 480w, https://rinko1017.life/p/emmc-fpga/time_hubec4292f4e93f68f54e7426eb8963a1b_62872_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="eMMC时序参数"
+class="gallery-image"
+data-flex-grow="76"
+data-flex-basis="184px"
+>&lt;/p>
+&lt;h2 id="emmc标准术语">eMMC标准术语&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>block：译为数据块，是flash中基本数据的传输单位。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CID: Device IDentification register 设备识别寄存器，类似于我们的身份证号码。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CLK: Clock signal，时钟信号。数据传输以处理都需要时钟信号，类似于心脏跳动，从而使各个器官运行。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CMD: Command line or e•MMC bus command (if extended CMDXX)，指的是host对device传达的指令。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CRC: Cyclic Redundancy Check 循环冗余校验，一种校验传输数据是否正确的方式。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>CSD: Device Specific Data register，用于保存EMMC运行期间的状态。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DAT: Data line 数据传输总线，总共有8根（data0~data7），用于host和device之间双向传输数据。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Data Strobe: Return Clock signal used in HS400 mode，该信号线是双向的，在data line 传输数据期间进行选通。类似于开关的功能。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DISCARD: 是由host发出的命令，用于识别一些不需要的数据区域，比如现在手机永久了会提示内存不足，询问是否需要删除不需要的应用或者设备，此时我们选择不要的数据或者应用并点击OK后，host 就会识别到这些这些应用存在的数据区域进行内部设置mapping table,断开数据映射关系，等待GC。此外，还存在一种Trim 命令也用作删除数据。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DDR: Dual data rate. 双倍速率传输，指的是数据会在时钟信号的上升沿和下降沿均进行传输。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DSR: Driver Stage Register 驱动阶段寄存器，用于改变系统性能。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>D-VDD: cache(缓存) 的电压正极，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>D-VSS: cache(缓存) 的电压接地极，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>D-VDDQ: cache(缓存) 的IO(input/output) 电压正极，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>D-VSSQ: cache(缓存) 的IO(input/output) 电压接地极，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>e•MMC: 嵌入式多媒体卡，其cache可进行修改，同时支持单个引脚。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>e 2 •MMC: 嵌入式多媒体卡，其cache可进行修改，同时支持三个引脚。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Empty Task Queue: 无任务队列，指的是device的任务队列中无任务的状态，类似于汽车的怠速状态。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ERASE: 一种擦除操作，只是断开了逻辑映射关系，而没有擦除EMMC物理存储单元中的数据。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Flash：一种可多次编程的非易失性存储器，非易失性指的是器件本身掉电后数据不会丢失。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Group: 综合了擦除和写入保护单元的数据块，数据可以被写入。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>HS200: 高速接口时序模式，其数据在时钟频率为200MHz的情况下，使用单倍数据传输模式，数据传输速率达到200MB/s，I/O供电电压为1V8或者1V2&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>HS400: 高速双倍数据接口时序模式，其数据在时钟频率为200MHz的情况下，使用双倍数据传输模式，数据传输速率达到400MB/s，I/O供电电压为1V8或者1V2。时钟频率超过50MHz 可被认为是高速信号。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>SDR和DDR的区别是SDR是Data line 总在时钟信号的上升沿传输数据，而DDR是Data line 在时钟信号的上升沿和下降沿均传输数据。所以SDR称为单倍速率，DDR称为双倍速率。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ISI: 码间干扰。setup/hold余量不足，会使信号在传输过程中，每个UI之间的数据产生干扰，导致数据出错。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>OCR: Operation Conditions Register 操作条件寄存器。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>QSR: Queue Status Register 队列状态寄存器。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>RCA: Relative Device Address register 相对设备地址寄存器。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>SSO: Simultaneous Switching Output (referred as certain type of Noise)同步开关输出，参考同步开关噪声。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>TRIM: 一种可以从写入保护组中删除数据的命令，用于删除数据。trim 命令被执行后，读到该区域的数据为‘0’。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tuning Process: 调试处理，用于host端对输入信号进行调整，寻找合适的采样点，利于高速信号传输期间，保证采样数据的正确性。在device中有专门用于在HS200模式下，供tunning的调谐数据块。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>UI: 单元间隔，作为单bit数据传输时需要的时间。举例：在时钟频率为200MHz时，单倍数据传输模式下，一个UI=1/f=1/200MHz=5ns。而在双倍数据传输模式下，一个UI=1/f/2=1/200MHz/2=2.5ns。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Markdown Syntax Guide</title><link>https://rinko1017.life/p/markdown-syntax-guide/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://rinko1017.life/p/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;h2 id="headings">Headings&lt;/h2>
+&lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
+&lt;h1 id="h1">H1&lt;/h1>
+&lt;h2 id="h2">H2&lt;/h2>
+&lt;h3 id="h3">H3&lt;/h3>
+&lt;h4 id="h4">H4&lt;/h4>
+&lt;h5 id="h5">H5&lt;/h5>
+&lt;h6 id="h6">H6&lt;/h6>
+&lt;h2 id="paragraph">Paragraph&lt;/h2>
+&lt;p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p>
+&lt;p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p>
+&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
+&lt;p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code>footer&lt;/code> or &lt;code>cite&lt;/code> element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p>
+&lt;h3 id="blockquote-without-attribution">Blockquote without attribution&lt;/h3>
+&lt;blockquote>
+&lt;p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong>Note&lt;/strong> that you can use &lt;em>Markdown syntax&lt;/em> within a blockquote.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="blockquote-with-attribution">Blockquote with attribution&lt;/h3>
+&lt;blockquote>
+&lt;p>Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br>
+— &lt;cite>Rob Pike&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/cite>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="tables">Tables&lt;/h2>
+&lt;p>Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Age&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Bob&lt;/td>
+&lt;td>27&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alice&lt;/td>
+&lt;td>23&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="inline-markdown-within-tables">Inline Markdown within tables&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Italics&lt;/th>
+&lt;th>Bold&lt;/th>
+&lt;th>Code&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;em>italics&lt;/em>&lt;/td>
+&lt;td>&lt;strong>bold&lt;/strong>&lt;/td>
+&lt;td>&lt;code>code&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>A&lt;/th>
+&lt;th>B&lt;/th>
+&lt;th>C&lt;/th>
+&lt;th>D&lt;/th>
+&lt;th>E&lt;/th>
+&lt;th>F&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td>
+&lt;td>Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td>
+&lt;td>Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td>
+&lt;td>Proin sit amet velit nec enim imperdiet vehicula.&lt;/td>
+&lt;td>Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td>
+&lt;td>Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="code-blocks">Code Blocks&lt;/h2>
+&lt;h3 id="code-block-with-backticks">Code block with backticks&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&amp;lt;!doctype html&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span> &lt;span class="na">lang&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;utf-8&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Example HTML5 Document&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Test&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="code-block-indented-with-four-spaces">Code block indented with four spaces&lt;/h3>
+&lt;pre>&lt;code>&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h3 id="diff-code-block">Diff code block&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-diff" data-lang="diff">&lt;span class="line">&lt;span class="cl">[dependencies.bevy]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="gd">&lt;/span>&lt;span class="gi">+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="one-line-code-block">One line code block&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>A paragraph&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="list-types">List Types&lt;/h2>
+&lt;h3 id="ordered-list">Ordered List&lt;/h3>
+&lt;ol>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;/ol>
+&lt;h3 id="unordered-list">Unordered List&lt;/h3>
+&lt;ul>
+&lt;li>List item&lt;/li>
+&lt;li>Another item&lt;/li>
+&lt;li>And another item&lt;/li>
+&lt;/ul>
+&lt;h3 id="nested-list">Nested list&lt;/h3>
+&lt;ul>
+&lt;li>Fruit
+&lt;ul>
+&lt;li>Apple&lt;/li>
+&lt;li>Orange&lt;/li>
+&lt;li>Banana&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dairy
+&lt;ul>
+&lt;li>Milk&lt;/li>
+&lt;li>Cheese&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark&lt;/h2>
+&lt;p>&lt;abbr title="Graphics Interchange Format">GIF&lt;/abbr> is a bitmap image format.&lt;/p>
+&lt;p>H&lt;sub>2&lt;/sub>O&lt;/p>
+&lt;p>X&lt;sup>n&lt;/sup> + Y&lt;sup>n&lt;/sup> = Z&lt;sup>n&lt;/sup>&lt;/p>
+&lt;p>Press &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;/p>
+&lt;p>Most &lt;mark>salamanders&lt;/mark> are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class="link" href="https://www.youtube.com/watch?v=PAAkCSZUG1c" target="_blank" rel="noopener"
+>talk&lt;/a> during Gopherfest, November 18, 2015.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Image gallery</title><link>https://rinko1017.life/p/image-gallery/</link><pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate><guid>https://rinko1017.life/p/image-gallery/</guid><description>&lt;img src="https://rinko1017.life/p/image-gallery/2.jpg" alt="Featured image of post Image gallery" />&lt;p>Hugo theme Stack supports the creation of interactive image galleries using Markdown. It&amp;rsquo;s powered by &lt;a class="link" href="https://photoswipe.com/" target="_blank" rel="noopener"
+>PhotoSwipe&lt;/a> and its syntax was inspired by &lt;a class="link" href="https://typlog.com/" target="_blank" rel="noopener"
+>Typlog&lt;/a>.&lt;/p>
+&lt;p>To use this feature, the image must be in the same directory as the Markdown file, as it uses Hugo&amp;rsquo;s page bundle feature to read the dimensions of the image. &lt;strong>External images are not supported.&lt;/strong>&lt;/p>
+&lt;h2 id="syntax">Syntax&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">Image 1&lt;/span>](&lt;span class="na">1.jpg&lt;/span>) ![&lt;span class="nt">Image 2&lt;/span>](&lt;span class="na">2.jpg&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="result">Result&lt;/h2>
+&lt;p>&lt;img src="https://rinko1017.life/p/image-gallery/1.jpg"
+width="2000"
+height="1400"
+srcset="https://rinko1017.life/p/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_480x0_resize_q75_box.jpg 480w, https://rinko1017.life/p/image-gallery/1_hudd2e8259c20ed0dcaa856c253552e90f_14625_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 1"
+class="gallery-image"
+data-flex-grow="142"
+data-flex-basis="342px"
+> &lt;img src="https://rinko1017.life/p/image-gallery/2.jpg"
+width="1500"
+height="2250"
+srcset="https://rinko1017.life/p/image-gallery/2_hubce42636ecacc1a380b462f3110efcec_37455_480x0_resize_q75_box.jpg 480w, https://rinko1017.life/p/image-gallery/2_hubce42636ecacc1a380b462f3110efcec_37455_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="Image 2"
+class="gallery-image"
+data-flex-grow="66"
+data-flex-basis="160px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@mymind" target="_blank" rel="noopener"
+>mymind&lt;/a> and &lt;a class="link" href="https://unsplash.com/@lukechesser" target="_blank" rel="noopener"
+>Luke Chesser&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Math Typesetting</title><link>https://rinko1017.life/p/math-typesetting/</link><pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><guid>https://rinko1017.life/p/math-typesetting/</guid><description>&lt;p>Stack has built-in support for math typesetting using &lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
+>KaTeX&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>It&amp;rsquo;s not enabled by default side-wide,&lt;/strong> but you can enable it for individual posts by adding &lt;code>math: true&lt;/code> to the front matter. Or you can enable it side-wide by adding &lt;code>math = true&lt;/code> to the &lt;code>params.article&lt;/code> section in &lt;code>config.toml&lt;/code>.&lt;/p>
+&lt;h2 id="inline-math">Inline math&lt;/h2>
+&lt;p>This is an inline mathematical expression: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">$\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="block-math">Block math&lt;/h2>
+&lt;p>$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">$$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
+$$&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">$$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Archives</title><link>https://rinko1017.life/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://rinko1017.life/archives/</guid><description/></item><item><title>Links</title><link>https://rinko1017.life/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rinko1017.life/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://rinko1017.life/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rinko1017.life/search/</guid><description/></item></channel></rss>

@@ -12,6 +12,9 @@ tags:
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
+## eMMC初始化
+![eMMC从忙到准备好](busytoready.png)
+
 ## eMMC命令格式
 ![eMMC命令格式](commandtype.png)
 

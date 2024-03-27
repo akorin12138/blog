@@ -3,7 +3,7 @@ title: 基于FPGA的eMMC控制器
 description: 基于eMMC4.51官方标准协议。eMMC4.51官方标准协议下没有HS400，主要记录HS200的开发。
 slug: eMMC-FPGA
 date: 2024-03-22 00:00:00+0000
-image: cover.jpg
+image: cover2.jpg
 categories:
     - FPGA
 tags:
